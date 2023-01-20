@@ -1,0 +1,101 @@
+:root{
+    /* Colores */
+    --bgBlack:#16161a;
+    --bgBlack2: #242629;
+    --btn: #7f5af0;
+    --btnText: #fffffe;
+    --Headline: #fffffe;
+    --Paragraph: #94a1b2;
+    --black: #010101;
+    --white:  #fffffe;
+    --Highlight: #7f5af0;
+    --Secondary: #72757e;
+    --Tertiary: rgb(44, 182, 125);
+    --Heart: rgb(255, 0, 64);
+    --Error: #ff0000;
+    /* Fuentes */
+    --MainHeroTitle: 'Orbitron', sans-serif;
+    --Titles: 'Spectral', serif;
+    --Text: 'Roboto', sans-serif;
+}
+
+.FormContainer{
+    height: calc(100vh - 90px);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Form{
+    padding: 20px;
+    height: 700px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid var(--Headline);
+    background-color: var(--bgBlack);
+    border-radius: 20px;
+}
+
+.Form__Titles{
+    align-self: flex-start;
+    font-family: var(--Titles);
+    color: var(--Headline);
+    font-size: 1.6rem;
+}
+
+.Form__Titles span > a{
+    color: var(--Highlight);
+    cursor: pointer;
+}
+
+.FormField{
+    padding: 40px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.FormField input{
+    padding: 20px;
+    height: 20px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: var(--bgBlack2);
+    color: var(--Headline);
+}
+
+.FormField input::placeholder{
+    color: var(--Highlight);
+}
+
+.FormField__Inputs{
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+small{
+    font-size: 1.4rem;
+    text-align: center;
+    color: var(--Error);
+}
+
+.Form__Checkbox{
+    padding: 0 0 0 30px;
+    display: flex;
+    align-self: start;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.4rem;
+    color: var(--Headline);
+}
+
+.Btn--Submit{
+    margin-top: 60px;
+    height: 40px;
+    width: 200px;
+    font-size: 1.6rem;
+    font-weight: 500;
+}

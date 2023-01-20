@@ -1,0 +1,32 @@
+
+/* Register */
+
+@media (max-width: 750px){
+
+    .FormContainer{
+        padding-top: 60px;
+        margin-top: 90px;
+    }
+
+    .FormContainer img{
+        display: none;
+    }
+
+    .Form{
+        width: 300px;
+    }
+
+    .FormField input{
+        width: 100%;
+    }
+
+    .Form__Checkbox{
+        font-size: 1.2rem;
+    }
+
+    footer{
+        margin-top: 60px;
+    }
+}
+
+
