@@ -13,13 +13,35 @@
     --white:  #fffffe;
     --Highlight: #7f5af0;
     --Secondary: #72757e;
-    --Tertiary: #2cb67d;
+    --Tertiary: rgb(44, 182, 125);
     --Heart: rgb(255, 0, 64);
     /* Fuentes */
     --MainHeroTitle: 'Orbitron', sans-serif;
     --Titles: 'Spectral', serif;
     --Text: 'Roboto', sans-serif;
 }
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #2cb67d #000000;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 14px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #000000;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #2cb67d;
+    border-radius: 15px;
+    border: 0px solid #2cb97d;
+  }
 
 
 *{
@@ -85,6 +107,7 @@ body{
 
 .Header--Bars{
     font-size: 2rem;
+    cursor: pointer;
 }
 
 .Header--Logo{
@@ -111,6 +134,7 @@ a .Header--User{
 }
 
 .Header--Cart{
+    cursor: pointer;
     font-size: 2rem;
 }
 
@@ -128,7 +152,7 @@ a .Header--User{
     position: absolute;
     top: 90px;
     right: 0;
-    height: 86vh;
+    height: calc(100vh - 90px);
     width: 50%;
     background-color: var(--bgBlack);
     border-left: 2px solid var(--Highlight);
@@ -144,7 +168,7 @@ a .Header--User{
     width: 100%;
     gap: 10px;
     padding-bottom: 20px;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .Cart__Card{
@@ -205,7 +229,7 @@ a .Header--User{
 /* Navbar */
     
 .Navbar{
-    position: absolute;
+    position: fixed;
     padding: 0px 18px;
     height: calc(100vh - 90px);
     width: 50%;
@@ -213,6 +237,7 @@ a .Header--User{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: flex-start;
     border-right: 1px solid var(--Highlight);
     border-bottom: 1px solid var(--Highlight);
     border-bottom-right-radius: 10px;
@@ -223,6 +248,40 @@ a .Header--User{
 
 .Navbar a{
     color: var(--Headline);
+}
+
+.Navbar__Search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: var(--Headline);
+}
+
+.Navbar__Search div{
+    position: relative;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Navbar__Search input{
+    padding-left: 22px;
+    height: 30px;
+    width: 100%;
+    background-color: var(--bgBlack2);
+    color: var(--Headline);
+}
+
+.Navbar__Search > div > i{
+    padding-left: 10px;
+    position: absolute;
+    left: 0;
+}
+
+.Navbar h3{
+    display: inline;
 }
 
 .Navbar__Categories{
@@ -251,6 +310,7 @@ a .Header--User{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    align-self: center;
     gap: 10px;
 }
 
@@ -295,6 +355,13 @@ a .Header--User{
     gap: 20px;
 }
 
+.Hero__Info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .Hero__Title{
     padding: 20px 0 0 0;
     text-align: center;
@@ -319,11 +386,30 @@ a .Header--User{
     color: var(--Paragraph);
 }
 
-.Hero__Banner{
-    margin-top: 40px;
-    height: 100px;
+.Hero__Text span{
+    color: var(--Headline);
+}
+
+.Hero__Suggests{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0 0 0;
+    width: 100%;
+    color: var(--Headline);
+}
+
+.Hero__Suggests h2{
+    padding-left: 20px;
+    align-self: flex-start;
+}
+
+.Hero__Suggests img{
     width: 100%;
 }
+
+
 
 /* Sale Section */
 
@@ -395,6 +481,7 @@ a .Header--User{
 }
 
 .Sale__Cards__Btns i{
+    cursor: pointer;
     color: var(--Headline);
     font-size: 1.4rem;
 }
@@ -465,6 +552,7 @@ a .Header--User{
 
 .Discover__Card__Bottom i{
     font-size: 1.8rem;
+    cursor: pointer;
 }
 
 .saved{
@@ -488,21 +576,22 @@ a .Header--User{
 .Contact{
     padding: 20px;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     gap: 10px;
     background-color: var(--bgBlack);
 }
 
 .Contact__Title{
     color: var(--Headline);
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-family: var(--Titles);
 }
 
 .Contact__Icons{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
     gap: 8px;
 }

@@ -1,0 +1,263 @@
+
+
+@media (min-width: 576px) {
+    /* Carrito */
+    
+    .Cart{
+        width: 30%;
+    }
+
+    /* Navbar */
+
+    .Navbar__User__Text{
+        justify-content: center;
+        gap: 20px;
+    }
+
+    /* Hero */
+
+    .Hero{
+        padding: 40px;
+        width: 100%;
+    }
+
+    .Hero__Title{
+        font-size: 2.4rem;
+    }
+
+    .Hero__Text{
+        width: 90%;
+        font-size: 1.6rem;
+    }
+
+    .Hero__Suggests{
+        visibility: visible;
+    }
+
+    .Hero__Suggests h2{
+        color: var(--Headline);
+        font-size: 1.6rem;
+        padding: 6px;
+        font-family: var(--Titles);
+    }
+
+    /* Sale */
+
+    .Sale__CardsContainer{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    /* Discover */
+
+    .Discover__Sections{
+        width: 60%;
+    }
+
+    /* Contact */
+
+    .Contact{
+        margin-top: 90px;
+    }
+    .Contact__Icons p{
+        width: 80px;
+        font-size: 1.2rem;
+    }
+
+    .Contact__Icons i{
+        font-size: 1.4rem;
+    }
+
+    .map{
+        width: 340px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    /* Cart */
+
+    .Cart__Card{
+        width: 70%;
+    }
+
+    /* Navbar */
+
+    .Navbar{
+        width: 30%;
+    }
+
+    /* Discover */
+
+    .Discover__Sections{
+        width: 100%;
+    }
+
+    .Discover__CardContainer{
+        width: 700px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    /* Contact */
+
+    .Contact__Title{
+        font-size: 2rem;
+    }
+    .Contact__Icons p{
+        width: 120px;
+        font-size: 1.6rem;
+    }
+    .Contact__Icons i{
+        font-size: 1.8rem;
+    }
+
+    /* Footer */
+
+    footer p{
+        font-size: 1.2rem;
+    }
+    .FooterList{
+        font-size: 1.4rem;
+    }
+    
+}
+
+@media (min-width: 992px) {
+
+    /* Header */
+
+    a .Header--Heart{
+        display: flex;
+    }
+
+    .Header__Icons__User{
+        display: flex;
+    }
+
+
+    .Header__Icons{
+        gap: 20px;
+    }
+
+    /* Cart */
+
+    .Cart{
+        width: 20%;
+    }
+
+    .Cart__Card{
+        width: 70%;
+    }
+
+    .Cart__Total{
+        width: 70%;
+    }
+
+    /* Hero */
+
+    .Hero{
+        padding: 10px 20px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Hero__Text{
+        padding: unset;
+        width: 80%;
+        font-size: 1.8rem;
+    }
+
+    .Hero__Suggests{
+        width: 70%;
+    }
+
+    .Hero__Suggests img{
+        height: 260px;
+    }
+
+    /* Sale */
+
+    .Sale__CardsContainer{
+        width: 700px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    /* Contact */
+
+    .map{
+        width: 500px;
+        height: 300px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    /* Navbar */
+
+    .Navbar{
+        width: 20%;
+    }
+
+    .Navbar h3{
+        font-size: 1.6rem;
+    }
+
+    .Navbar__Categories a{
+        font-size: 1.3rem;
+    }
+
+    .Navbar__User--img{
+        font-size: 3rem;
+    }
+
+    /* Hero */
+    .Hero{
+        padding: 120px 0;
+        margin: auto;
+        max-width: 1200px;
+    }
+
+    .Hero__Suggests{
+        width: 40%;
+    }
+
+    .Hero__Suggests img{
+        height: 200px;
+    }
+
+    /* Sale */
+
+    .Sale__Cards{
+        height: 200px;
+        width: 220px;
+        justify-content: space-between;
+    }
+
+    .Sale__Cards__Bottom{
+        padding: 0 8px 30px 8px;
+    }
+
+    .Sale__Cards__Prices{
+        font-size: 1.8rem;
+    }
+
+    /* Discover */
+
+    .Discover__Title{
+        font-size: 2.4rem;
+    }
+
+    .Btn--Discover{
+        height: 40px;
+        font-size: 1.6rem;
+    }
+
+    /* Contact */
+    .Contact{
+        justify-content: space-evenly;
+        
+    }
+}
