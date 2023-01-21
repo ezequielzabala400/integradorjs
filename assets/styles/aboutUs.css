@@ -1,0 +1,121 @@
+:root{
+    /* Colores */
+    --bgBlack:#16161a;
+    --bgBlack2: #242629;
+    --btn: #7f5af0;
+    --btnText: #fffffe;
+    --Headline: #fffffe;
+    --Paragraph: #94a1b2;
+    --black: #010101;
+    --white:  #fffffe;
+    --Highlight: #7f5af0;
+    --Secondary: #72757e;
+    --Tertiary: rgb(44, 182, 125);
+    --Heart: rgb(255, 0, 64);
+    /* Fuentes */
+    --MainHeroTitle: 'Orbitron', sans-serif;
+    --Titles: 'Spectral', serif;
+    --Text: 'Roboto', sans-serif;
+}
+
+
+main, body{
+    background-color: #010101;
+}
+
+.AboutUs{
+    padding: 40px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+
+.AboutUs--Img{
+    width: 320px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.AboutUs h2{
+    color: var(--Headline);
+}
+
+.AboutUs p{
+    color: var(--Paragraph);
+}
+
+.AboutUs__Content{
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #010101;
+    height: 130px;
+    width: 320px;
+}
+
+.AboutUs__Content p{
+    padding: 0 20px;
+    text-align: start;
+    font-size: 1.2rem;
+}
+
+.AboutUs__Content h2{
+    padding: 0 20px;
+}
+
+
+@media (min-width: 768px) {
+    .AboutUs__Box{
+        width: 700px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .AboutUs__Box:nth-child(2){
+        flex-direction: row-reverse;
+    }
+
+    .AboutUs__Content{
+        height: 160px;
+    }
+
+    .AboutUs__Content p{
+        font-size: 1.4rem;
+    }
+    
+    .AboutUs__Content h2{
+        font-size: 1.6rem;
+    }
+}
+
+@media (min-width: 992px){
+    .AboutUs__Box{
+        width: 900px;
+    }
+}
+
+@media (min-width: 1200px){
+    .AboutUs__Content{
+        height: 200px;
+        width: 400px;
+    }
+
+    .AboutUs__Box{
+        width: 1200px;
+        justify-content: space-around;
+    }
+    .AboutUs__Content p{
+        font-size: 1.6rem;
+    }
+    
+    .AboutUs__Content h2{
+        font-size: 2rem;
+    }
+}

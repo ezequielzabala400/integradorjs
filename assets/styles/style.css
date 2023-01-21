@@ -281,7 +281,26 @@ a .Header--User{
 }
 
 .Navbar h3{
-    display: inline;
+    position: relative;
+}
+
+.Navbar h3::before{
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: var(--Headline);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.4s ease-in;
+}
+
+.Navbar h3:hover::before{
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: all 0.4s ease-out;
 }
 
 .Navbar__Categories{
@@ -643,5 +662,8 @@ footer{
 }
 
 footer p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: var(--Paragraph);
 }
