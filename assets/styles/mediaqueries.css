@@ -86,6 +86,10 @@
         width: 30%;
     }
 
+    /* Hero */
+    .Hero__Text{
+        width: 70%;
+    }
     /* Discover */
 
     .Discover__Sections{
@@ -166,8 +170,9 @@
 
     .Hero__Text{
         padding: unset;
-        width: 80%;
+        width: 70%;
         font-size: 1.8rem;
+        line-height: 3rem;
     }
 
     .Hero__Suggests{

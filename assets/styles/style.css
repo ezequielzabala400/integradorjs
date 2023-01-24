@@ -63,9 +63,6 @@ body{
 
 /* Clases Generales */
 
-.hidden{
-    visibility: hidden;
-}
 
 .Strong{
     font-family: var(--MainHeroTitle);
@@ -231,7 +228,8 @@ a .Header--User{
 .Navbar{
     position: fixed;
     padding: 0px 18px;
-    height: calc(100vh - 90px);
+    top: 0;
+    height: 100vh;
     width: 50%;
     background-color: var(--bgBlack);
     display: flex;
@@ -246,11 +244,22 @@ a .Header--User{
     z-index: 10;
 }
 
+.cross{
+    padding: 30px 30px 0 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
 .Navbar a{
     color: var(--Headline);
 }
 
 .Navbar__Search{
+    margin-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -363,7 +372,7 @@ a .Header--User{
 .Container{
     margin-top: 90px;
     width: 100%;
-    
+    overflow: hidden;
 }
 
 /* Hero Section */
@@ -400,6 +409,7 @@ a .Header--User{
 }
 
 .Hero__Text{
+    width: 300px;
     padding: 0px 20px;
     text-align:center;
     font-size: 1.4rem;
@@ -621,15 +631,27 @@ a .Header--User{
     color: var(--Paragraph);
 }
 
+.Contact__Icons a:hover{
+    color: var(--Headline);
+}
+
 .Contact__Icons p{
-    width: 60px;
+    width: 80px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-family: var(--Text);
 }
 
 .Contact__Icons i{
+    text-align: center;
     color: var(--Tertiary);
+    transition: color .4s ease-out;
+}
+
+.Contact__Icons i:hover{
+    color: white;
+    transition: color 0.4s ease-in;
 }
 
 footer{
@@ -666,4 +688,8 @@ footer p{
     justify-content: center;
     align-items: center;
     color: var(--Paragraph);
+}
+
+.hidden{
+    display: none;
 }

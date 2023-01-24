@@ -1,0 +1,125 @@
+:root{
+    /* Colores */
+    --bgBlack:#16161a;
+    --bgBlack2: #242629;
+    --btn: #7f5af0;
+    --btnText: #fffffe;
+    --Headline: #fffffe;
+    --Paragraph: #94a1b2;
+    --black: #010101;
+    --white:  #fffffe;
+    --Highlight: #7f5af0;
+    --Secondary: #72757e;
+    --Tertiary: rgb(44, 182, 125);
+    --Heart: rgb(255, 0, 64);
+    /* Fuentes */
+    --MainHeroTitle: 'Orbitron', sans-serif;
+    --Titles: 'Spectral', serif;
+    --Text: 'Roboto', sans-serif;
+}
+
+.Container{
+    background-color: var(--bgBlack);
+}
+
+.Faq-Container{
+    margin: auto;
+    height: 100vh;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Faq-Title{
+    display: flex;
+    align-items: center;
+}
+
+.Faq-Title img{
+    height: 100px;
+    width: 100px;
+}
+
+.Faq-Title h2{
+    font-size: 3rem;
+    font-family: var(--MainHeroTitle);
+    color: var(--Tertiary);
+}
+
+.Faq-Section{
+    width: 80%;
+}
+
+.Faq-Section__Title{
+    color: var(--Headline);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.Faq-Section__Title:hover{
+    color: var(--Highlight);
+    transition: all 0.4s ease;
+}
+
+.Title--Active{
+    color: var(--Highlight);
+}
+
+.arrow{
+    transform: rotate(0);
+    transition: all 0.4s;
+}
+
+.arrow--active{
+    transform: rotate(180deg);
+    transition: all 0.4s;
+}
+
+.Faq-Section p{
+    font-size: 1.3rem;
+    color: var(--Tertiary);
+    font-family: var(--Text);
+}
+
+.Faq-Section p span{
+    color: var(--btnText);
+}
+
+@media (min-width: 576px){
+
+    .Faq-Container{
+        width: 500px;
+    }
+
+    .Faq-Title img{
+        height: 160px;
+        width: 160px;
+    }
+
+    .Faq-Title h2{
+        font-size: 5rem;
+    }
+
+    .Faq-Section__Title{
+        font-size: 1.6rem;
+    }
+}
+
+@media (min-width: 768px){
+    .Faq-Container{
+        width: 700px;
+    }
+
+    .Faq-Section__Title{
+        font-size: 2rem;
+    }
+    
+    .Faq-Section p{
+        font-size: 1.5rem;
+    }
+}

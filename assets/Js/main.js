@@ -4,8 +4,16 @@ const navbar = document.querySelector('#Navbar');
 const Cart = document.querySelector('#Cart');
 const slider = document.querySelector('.Hero__Slider');
 
-const callMenu = () => {
-        navbar.classList.toggle('hidden')
+const callMenu = (e) => {
+    console.log(e)
+        if(e.target.classList.contains('Header--Bars')){
+            navbar.classList.remove('hidden')
+            navbar.addEventListener('click', (e) => {
+                if(e.target.classList.contains('cross')){
+                    navbar.classList.add('hidden')
+                }
+            })
+        }
 }
 
 const callCart = () => {

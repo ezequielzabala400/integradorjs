@@ -1,0 +1,92 @@
+
+/* KeyFrames */
+
+@keyframes slide-right{
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-left{
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+/* Navbar & Cart */
+.Navbar{
+    animation: slide-left 0.4s;
+}
+
+.Cart{
+    animation: slide-right 0.4s;
+}
+
+/* Form */
+.FormContainer{
+    animation: fade 1.2s ease;
+}
+
+.Form{
+    animation: slide-right 0.7s ease-in, fade 1.2s ease-out;
+}
+
+/* Soporte */
+.Faq-Section p{
+    animation: fade 0.3s ease;
+}
+
+/* About Us */
+
+.AboutUs__Box:first-child img{
+    opacity: 0;
+    animation: fade 0.4s ease-in 0.6s forwards;
+}
+
+.AboutUs__Box:first-child .AboutUs__Content{
+    opacity: 0;
+    animation-name: fade;
+    animation-duration: 1.4s;
+    animation-delay: 0.6s;
+    animation-fill-mode: forwards;
+}
+.AboutUs__Box:nth-child(2) img{
+    opacity: 0;
+    animation: fade 0.4s ease-in 1.4s forwards;
+}
+
+.AboutUs__Box:nth-child(2) .AboutUs__Content{
+    opacity: 0;
+    animation-name: fade;
+    animation-duration: 1.4s;
+    animation-delay: 1.4s;
+    animation-fill-mode: forwards;
+}
+
+
+.AboutUs__Box:last-child img{
+    opacity: 0;
+    animation: fade 0.4s ease-in 2.2s forwards;
+}
+
+.AboutUs__Box:last-child .AboutUs__Content{
+    opacity: 0;
+    animation-name: fade;
+    animation-duration: 1.4s;
+    animation-delay: 2.2s;
+    animation-fill-mode: forwards;
+}
